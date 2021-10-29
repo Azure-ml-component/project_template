@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: sstreamunion2
+version: 0.0.1
+display_name: SStreamUnion2
+type: CommandComponent
+tags: {}
+inputs:
+  in1:
+    type: path
+    optional: true
+  in2:
+    type: path
+    optional: true
+  clusterbycolumn:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  output_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

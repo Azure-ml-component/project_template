@@ -1,0 +1,31 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_entity_conflation_publishing_statistics
+version: 0.0.1
+display_name: '[Outings] Entity Conflation Publishing Statistics'
+type: CommandComponent
+tags: {}
+inputs:
+  record_triples:
+    type: path
+    optional: true
+  master_attr:
+    type: path
+    optional: true
+  ta_satori_links:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  stats_ss_out:
+    type: path
+  stats_tsv_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

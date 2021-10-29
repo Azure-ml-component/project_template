@@ -1,0 +1,34 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_cosine_similarity
+version: 0.0.1
+display_name: '[Outings] Cosine Similarity'
+type: CommandComponent
+tags: {}
+inputs:
+  stream_in:
+    type: path
+    optional: true
+  vec1:
+    type: String
+    optional: true
+  vec2:
+    type: String
+    optional: true
+  delim:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  output_ss_out:
+    type: path
+  output_tsv_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

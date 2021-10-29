@@ -1,0 +1,191 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: create_generic_tsv_file_for_transformer_on_py3_5
+version: 0.0.1
+display_name: Create Generic TSV file for transformer on py3.5
+type: CommandComponent
+tags: {}
+inputs:
+  l1:
+    type: String
+    optional: true
+  l2:
+    type: String
+    optional: true
+  l3:
+    type: String
+    optional: true
+  l4:
+    type: String
+    optional: true
+  l5:
+    type: String
+    optional: true
+  l6:
+    type: String
+    optional: true
+  l7:
+    type: String
+    optional: true
+  l8:
+    type: String
+    optional: true
+  l9:
+    type: String
+    optional: true
+  l11:
+    type: String
+    optional: true
+  l12:
+    type: String
+    optional: true
+  l13:
+    type: String
+    optional: true
+  l14:
+    type: String
+    optional: true
+  l15:
+    type: String
+    optional: true
+  l16:
+    type: String
+    optional: true
+  l17:
+    type: String
+    optional: true
+  l18:
+    type: String
+    optional: true
+  l19:
+    type: String
+    optional: true
+  l20:
+    type: String
+    optional: true
+  l21:
+    type: String
+    optional: true
+  l22:
+    type: String
+    optional: true
+  l23:
+    type: String
+    optional: true
+  l24:
+    type: String
+    optional: true
+  l25:
+    type: String
+    optional: true
+  l26:
+    type: String
+    optional: true
+  l27:
+    type: String
+    optional: true
+  l28:
+    type: String
+    optional: true
+  l29:
+    type: String
+    optional: true
+  l30:
+    type: String
+    optional: true
+  l31:
+    type: String
+    optional: true
+  l32:
+    type: String
+    optional: true
+  l33:
+    type: String
+    optional: true
+  l34:
+    type: String
+    optional: true
+  l35:
+    type: String
+    optional: true
+  l36:
+    type: String
+    optional: true
+  l37:
+    type: String
+    optional: true
+  l38:
+    type: String
+    optional: true
+  l39:
+    type: String
+    optional: true
+  l40:
+    type: String
+    optional: true
+  l41:
+    type: String
+    optional: true
+  l42:
+    type: String
+    optional: true
+  l43:
+    type: String
+    optional: true
+  l44:
+    type: String
+    optional: true
+  l45:
+    type: String
+    optional: true
+  l46:
+    type: String
+    optional: true
+  l47:
+    type: String
+    optional: true
+  l48:
+    type: String
+    optional: true
+  l49:
+    type: String
+    optional: true
+  l50:
+    type: String
+    optional: true
+  l51:
+    type: String
+    optional: true
+  l52:
+    type: String
+    optional: true
+  l53:
+    type: String
+    optional: true
+  l54:
+    type: String
+    optional: true
+  l55:
+    type: String
+    optional: true
+  l56:
+    type: String
+    optional: true
+  l57:
+    type: String
+    optional: true
+  l58:
+    type: String
+    optional: true
+  l59:
+    type: String
+    optional: true
+  l60:
+    type: String
+    optional: true
+outputs:
+  tsvfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

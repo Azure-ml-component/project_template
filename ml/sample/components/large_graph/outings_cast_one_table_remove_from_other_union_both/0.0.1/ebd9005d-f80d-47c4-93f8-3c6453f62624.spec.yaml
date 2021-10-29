@@ -1,0 +1,92 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: scope_basics_union_any_type_between_sstreams
+version: 0.0.1
+display_name: Scope.Basics | UNION (any type) between SStreams
+type: CommandComponent
+tags: {}
+inputs:
+  in_1:
+    type: path
+    optional: true
+  in_2:
+    type: path
+    optional: true
+  in_3:
+    type: path
+    optional: true
+  in_4:
+    type: path
+    optional: true
+  in_5:
+    type: path
+    optional: true
+  in_6:
+    type: path
+    optional: true
+  in_7:
+    type: path
+    optional: true
+  in_8:
+    type: path
+    optional: true
+  in_9:
+    type: path
+    optional: true
+  in_10:
+    type: path
+    optional: true
+  in_11:
+    type: path
+    optional: true
+  in_12:
+    type: path
+    optional: true
+  in_13:
+    type: path
+    optional: true
+  in_14:
+    type: path
+    optional: true
+  in_15:
+    type: path
+    optional: true
+  in_16:
+    type: path
+    optional: true
+  in_17:
+    type: path
+    optional: true
+  in_18:
+    type: path
+    optional: true
+  in_19:
+    type: path
+    optional: true
+  in_20:
+    type: path
+    optional: true
+  referencedstreampath:
+    type: String
+    optional: true
+  clusterkey:
+    type: String
+    optional: true
+  numberofpartitions:
+    type: String
+    optional: true
+  sortkey:
+    type: String
+    optional: true
+  unionoption:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  ssoutput_unioneddata_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

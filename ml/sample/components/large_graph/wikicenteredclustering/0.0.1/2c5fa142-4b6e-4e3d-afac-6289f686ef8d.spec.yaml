@@ -1,0 +1,32 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_cast_one_table_remove_from_other_union_both
+version: 0.0.1
+display_name: '[Outings] Cast One Table, Remove from Other, Union both'
+type: CommandComponent
+tags: {}
+inputs:
+  remove_input:
+    type: path
+    optional: true
+  cast_input:
+    type: path
+    optional: true
+  cast_list:
+    type: String
+    optional: true
+  remove_list:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  output_ss_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

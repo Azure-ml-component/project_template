@@ -1,0 +1,141 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: aml_itp_module
+version: 0.0.1
+display_name: Aml ITP Module
+type: CommandComponent
+tags: {}
+inputs:
+  input1:
+    type: path
+    optional: true
+  input2:
+    type: path
+    optional: true
+  input3:
+    type: path
+    optional: true
+  input4:
+    type: path
+    optional: true
+  input5:
+    type: path
+    optional: true
+  input6:
+    type: path
+    optional: true
+  input7:
+    type: path
+    optional: true
+  input8:
+    type: path
+    optional: true
+  input9:
+    type: path
+    optional: true
+  input10:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  cluster:
+    type: String
+    optional: true
+  clustergroupname:
+    type: String
+    optional: true
+  sku:
+    type: String
+    optional: true
+  vcblocklist:
+    type: String
+    optional: true
+  clusterblocklist:
+    type: String
+    optional: true
+  jobname_new:
+    type: String
+    optional: true
+  jobtype:
+    type: String
+    optional: true
+  preemptiblejob:
+    type: String
+    optional: true
+  nodecount_new:
+    type: String
+    optional: true
+  gpucount:
+    type: String
+    optional: true
+  registry:
+    type: String
+    optional: true
+  dockerimage:
+    type: String
+    optional: true
+  command_new:
+    type: String
+    optional: true
+  homepathmount:
+    type: String
+    optional: true
+  nodecountset:
+    type: String
+    optional: true
+  minimumscaleintervalinminute:
+    type: String
+    optional: true
+  blobaccountname:
+    type: String
+    optional: true
+  blobcontainername:
+    type: String
+    optional: true
+  blobmountpath:
+    type: String
+    optional: true
+  blobmountoptions:
+    type: String
+    optional: true
+  datadownloadreuse:
+    type: String
+    optional: true
+  tonfsfolder:
+    type: String
+    optional: true
+  fromnfsfolder:
+    type: String
+    optional: true
+  tocosmospath:
+    type: String
+    optional: true
+  environmentvariables_new:
+    type: String
+    optional: true
+  retrypolicy:
+    type: String
+    optional: true
+  tensorboardenabled:
+    type: String
+    optional: true
+  indicator:
+    type: String
+    optional: true
+outputs:
+  output1_out:
+    type: path
+  output2_out:
+    type: path
+  output3_out:
+    type: path
+  output4_out:
+    type: path
+  output5_out:
+    type: path
+  joboutput_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

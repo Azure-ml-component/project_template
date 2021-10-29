@@ -1,0 +1,25 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: create_generic_tsv
+version: 0.0.1
+display_name: Create Generic TSV
+type: CommandComponent
+tags: {}
+inputs:
+  text:
+    type: String
+    optional: true
+  tabseparator:
+    type: String
+    optional: true
+  lineseparator:
+    type: String
+    optional: true
+outputs:
+  outputfile_out:
+    type: path
+  logfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

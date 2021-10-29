@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: attractions_ground_truth_candidates_attributes_generator
+version: 0.0.1
+display_name: Attractions Ground Truth Candidates Attributes Generator
+type: CommandComponent
+tags: {}
+inputs:
+  master_candidates_output_stream:
+    type: path
+    optional: true
+  ground_truth_stream:
+    type: path
+    optional: true
+  ground_truth_domain:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  ground_truth_candidates_attributes_stream_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

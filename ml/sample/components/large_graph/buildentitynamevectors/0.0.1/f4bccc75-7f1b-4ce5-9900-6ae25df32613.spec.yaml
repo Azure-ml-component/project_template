@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: sstream_to_tsv_aether
+version: 0.0.1
+display_name: SStream to TSV (aether)
+type: CommandComponent
+tags: {}
+inputs:
+  aetherstructuredstream:
+    type: path
+    optional: true
+  addheader:
+    type: String
+    optional: true
+  commasepcolumnstokeep:
+    type: String
+    optional: true
+outputs:
+  outputtsv_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

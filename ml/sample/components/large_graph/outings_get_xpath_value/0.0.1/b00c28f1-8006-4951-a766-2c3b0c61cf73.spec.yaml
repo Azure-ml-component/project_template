@@ -1,0 +1,32 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: upload_to_vc_with_inputs_generictsv
+version: 0.0.1
+display_name: Upload To VC With Inputs  GenericTSV
+type: CommandComponent
+tags: {}
+inputs:
+  tsv:
+    type: path
+    optional: true
+  destinationpath:
+    type: path
+    optional: true
+  shouldrespectlineboundaries:
+    type: String
+    optional: true
+  overwrite:
+    type: String
+    optional: true
+  expiration:
+    type: String
+    optional: true
+  datamanagementenabled:
+    type: String
+    optional: true
+outputs:
+  destinationpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

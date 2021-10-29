@@ -1,0 +1,19 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_dominant_type_classifier
+version: 0.0.1
+display_name: '[Outings] Dominant Type Classifier'
+type: CommandComponent
+tags: {}
+inputs:
+  inputdata:
+    type: path
+    optional: true
+outputs:
+  countsofentitytypes_out:
+    type: path
+  dominantentitytypes_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,29 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: cosmos_mirror_with_inputs_and_overwrite
+version: 0.0.1
+display_name: Cosmos Mirror with Inputs and Overwrite
+type: CommandComponent
+tags: {}
+inputs:
+  sourcepath:
+    type: path
+    optional: true
+  destinationpath:
+    type: path
+    optional: true
+  expiration:
+    type: String
+    optional: true
+  datamanagementenabled:
+    type: String
+    optional: true
+  shouldoverrideifexists:
+    type: String
+    optional: true
+outputs:
+  destinationpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

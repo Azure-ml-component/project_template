@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: cosmospathcreator_rundate
+version: 0.0.1
+display_name: CosmosPathCreator (+RunDate)
+type: CommandComponent
+tags: {}
+inputs:
+  relativepath:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  rundate:
+    type: String
+    optional: true
+outputs:
+  createdpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,65 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: scope_basics_union_intersect_except_sstream
+version: 0.0.1
+display_name: Scope.Basics - UNION - INTERSECT - EXCEPT SStream
+type: CommandComponent
+tags: {}
+inputs:
+  first:
+    type: path
+    optional: true
+  second:
+    type: path
+    optional: true
+  third:
+    type: path
+    optional: true
+  fourth:
+    type: path
+    optional: true
+  fifth:
+    type: path
+    optional: true
+  sixth:
+    type: path
+    optional: true
+  seventh:
+    type: path
+    optional: true
+  eight:
+    type: path
+    optional: true
+  ninth:
+    type: path
+    optional: true
+  tenth:
+    type: path
+    optional: true
+  eleventh:
+    type: path
+    optional: true
+  twelveth:
+    type: path
+    optional: true
+  uniontype:
+    type: String
+    optional: true
+  clusteredbycolumns:
+    type: String
+    optional: true
+  sortedbycolumns:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  outputss_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

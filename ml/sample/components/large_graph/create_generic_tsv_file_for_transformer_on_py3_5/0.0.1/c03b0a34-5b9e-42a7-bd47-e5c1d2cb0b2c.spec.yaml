@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: cast_anyfile_to_generictsv
+version: 0.0.1
+display_name: Cast AnyFile to GenericTSV
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+outputs:
+  outputtsv_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

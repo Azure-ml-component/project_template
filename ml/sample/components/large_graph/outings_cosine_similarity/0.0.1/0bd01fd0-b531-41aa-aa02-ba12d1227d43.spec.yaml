@@ -1,0 +1,31 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_ta_sid_mapping_generator
+version: 0.0.1
+display_name: '[Outings] TA-SID Mapping Generator'
+type: CommandComponent
+tags: {}
+inputs:
+  all_trails_feed:
+    type: path
+    optional: true
+  ta_satori_map:
+    type: path
+    optional: true
+  wiki_satori_map:
+    type: path
+    optional: true
+  triples_ss:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  record_ta_sid_triples_out:
+    type: path
+  ta_sid_mapping_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

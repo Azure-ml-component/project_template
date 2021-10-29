@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: not_conditional_decision_logic
+version: 0.0.1
+display_name: NOT (Conditional Decision Logic)
+type: CommandComponent
+tags: {}
+inputs:
+  control:
+    type: path
+    optional: true
+outputs:
+  control_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

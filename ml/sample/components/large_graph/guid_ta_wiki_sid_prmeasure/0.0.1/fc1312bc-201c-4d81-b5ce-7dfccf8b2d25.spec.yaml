@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: alltrailscenteredclustering
+version: 0.0.1
+display_name: AllTrailsCenteredClustering
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile1:
+    type: path
+    optional: true
+  inputfile2:
+    type: path
+    optional: true
+outputs:
+  outputfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

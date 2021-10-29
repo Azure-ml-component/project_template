@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: copy_aether_cosmos_with_fixed_destination
+version: 0.0.1
+display_name: Copy Aether -> Cosmos with fixed destination
+type: CommandComponent
+tags: {}
+inputs:
+  infile:
+    type: path
+    optional: true
+  destlocation:
+    type: path
+    optional: true
+  shouldoverrideifexists:
+    type: String
+    optional: true
+outputs:
+  outfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

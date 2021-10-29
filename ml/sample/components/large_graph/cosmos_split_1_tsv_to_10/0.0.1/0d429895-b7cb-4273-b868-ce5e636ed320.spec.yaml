@@ -1,0 +1,28 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: rbf_svm_prediction_ongraph
+version: 0.0.1
+display_name: RBF_SVM_Prediction_OnGraph
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile1:
+    type: path
+    optional: true
+  inputfile2:
+    type: path
+    optional: true
+  inputfile3:
+    type: path
+    optional: true
+  inputfile4:
+    type: path
+    optional: true
+outputs:
+  outputfile1_out:
+    type: path
+  outputfile2_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

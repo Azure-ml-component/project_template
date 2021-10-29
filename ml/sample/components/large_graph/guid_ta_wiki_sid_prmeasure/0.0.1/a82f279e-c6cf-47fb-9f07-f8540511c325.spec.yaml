@@ -1,0 +1,31 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: cosmos_split_1_tsv_to_5
+version: 0.0.1
+display_name: Cosmos Split 1 TSV to 5
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile:
+    type: path
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  part0_out:
+    type: path
+  part1_out:
+    type: path
+  part2_out:
+    type: path
+  part3_out:
+    type: path
+  part4_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

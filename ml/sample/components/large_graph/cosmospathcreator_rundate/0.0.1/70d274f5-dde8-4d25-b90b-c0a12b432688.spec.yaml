@@ -1,0 +1,47 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: attractions_entity_similarity_data_merge_scope_module
+version: 0.0.1
+display_name: Attractions Entity Similarity Data Merge Scope Module
+type: CommandComponent
+tags: {}
+inputs:
+  master_candidate_pairs_filtered_stream:
+    type: path
+    optional: true
+  location_similarity_stream:
+    type: path
+    optional: true
+  entity_type_similarity_stream:
+    type: path
+    optional: true
+  topics_similarity_stream:
+    type: path
+    optional: true
+  image_similarity_stream:
+    type: path
+    optional: true
+  name_similarity_stream:
+    type: path
+    optional: true
+  ner_json_similarity_stream:
+    type: path
+    optional: true
+  website_similarity_stream:
+    type: path
+    optional: true
+  phonenumber_similarity_stream:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  merged_similarity_stream_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

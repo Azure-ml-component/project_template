@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: copy_intermediate_directory_or_file_to_fixed_cosmos_path
+version: 0.0.1
+display_name: Copy Intermediate Directory or File to Fixed Cosmos Path
+type: CommandComponent
+tags: {}
+inputs:
+  directoryresource:
+    type: path
+    optional: true
+  destinationpath:
+    type: path
+    optional: true
+  shouldrespectlineboundaries:
+    type: String
+    optional: true
+  shouldoverrideifexists:
+    type: String
+    optional: true
+outputs:
+  cosmospath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

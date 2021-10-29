@@ -1,0 +1,27 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: landmark_datacollection_utils_rmacextractor_outings_vc
+version: 0.0.1
+display_name: Landmark.DataCollection.Utils.RMACExtractor - Outings VC
+type: CommandComponent
+tags: {}
+inputs:
+  inputimagebinaryfile:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  outputfeaturefiletsv_out:
+    type: path
+  statsfiletsv_out:
+    type: path
+  outputfeaturefiless_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

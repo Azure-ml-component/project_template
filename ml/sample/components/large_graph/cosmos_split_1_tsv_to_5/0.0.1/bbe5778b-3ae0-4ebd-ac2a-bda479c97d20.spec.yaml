@@ -1,0 +1,32 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: copy_intermediate_data_tsv_to_specific_vc_with_overwrite
+version: 0.0.1
+display_name: Copy Intermediate Data (TSV) to Specific VC with Overwrite
+type: CommandComponent
+tags: {}
+inputs:
+  tsv:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  relativepath:
+    type: String
+    optional: true
+  overwrite:
+    type: String
+    optional: true
+  datamanagementenabled:
+    type: String
+    optional: true
+  expiration:
+    type: String
+    optional: true
+outputs:
+  destinationpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: attractions_entity_conflation_image_url_extractor_scope_module
+version: 0.0.1
+display_name: Attractions Entity Conflation Image Url Extractor Scope Module
+type: CommandComponent
+tags: {}
+inputs:
+  master_features_stream:
+    type: path
+    optional: true
+  max_image_count:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  image_urls_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

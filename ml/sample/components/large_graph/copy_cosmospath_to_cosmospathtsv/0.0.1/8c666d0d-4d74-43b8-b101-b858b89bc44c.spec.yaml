@@ -1,0 +1,21 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: entity_graph_generation
+version: 0.0.1
+display_name: Entity_Graph_Generation
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile:
+    type: path
+    optional: true
+outputs:
+  outputfile_out:
+    type: path
+  outputfile2_out:
+    type: path
+  outputfile3_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

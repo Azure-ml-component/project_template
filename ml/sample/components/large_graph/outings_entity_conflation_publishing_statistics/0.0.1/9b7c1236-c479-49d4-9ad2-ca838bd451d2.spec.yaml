@@ -1,0 +1,31 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: entity_conflation_data_status_monitor
+version: 0.0.1
+display_name: Entity conflation data status monitor
+type: CommandComponent
+tags: {}
+inputs:
+  master_attr:
+    type: path
+    optional: true
+  master_pairs:
+    type: path
+    optional: true
+  merged_sim:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  stats_ecis_dm_out:
+    type: path
+  stats_ecis_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

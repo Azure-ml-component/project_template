@@ -1,0 +1,19 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: buildentitynamedictionary
+version: 0.0.1
+display_name: BuildEntityNameDictionary
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile:
+    type: path
+    optional: true
+outputs:
+  outputfile1_out:
+    type: path
+  outputfile2_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

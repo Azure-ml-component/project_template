@@ -1,0 +1,28 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: radio_split_sstream
+version: 0.0.1
+display_name: Radio Split SStream
+type: CommandComponent
+tags: {}
+inputs:
+  inputpath:
+    type: path
+    optional: true
+  columns:
+    type: String
+    optional: true
+  leftratio:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  leftpath_out:
+    type: path
+  rightpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,30 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: attractions_conflation_named_entity_recognition_similarity_calcuation_scope_module
+version: 0.0.1
+display_name: Attractions Conflation Named Entity Recognition Similarity Calcuation
+  Scope Module
+type: CommandComponent
+tags: {}
+inputs:
+  master_attributes:
+    type: path
+    optional: true
+  master_candidate_pairs_filtered_stream:
+    type: path
+    optional: true
+  deep_model:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  ner_json_similarity_stream_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

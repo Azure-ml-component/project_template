@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: attractions_conflation_entity_type_similarity_calculation_scope_module
+version: 0.0.1
+display_name: Attractions Conflation Entity Type Similarity Calculation Scope Module
+type: CommandComponent
+tags: {}
+inputs:
+  master_attributes:
+    type: path
+    optional: true
+  master_candidate_pairs_filtered_stream:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  entity_type_similarity_stream_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

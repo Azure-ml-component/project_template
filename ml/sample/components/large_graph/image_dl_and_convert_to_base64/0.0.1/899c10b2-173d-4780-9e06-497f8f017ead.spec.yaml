@@ -1,0 +1,78 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: generalselectcosmos
+version: 0.0.1
+display_name: GeneralSelectCosmos
+type: CommandComponent
+tags: {}
+inputs:
+  in1:
+    type: path
+    optional: true
+  in2:
+    type: path
+    optional: true
+  in3:
+    type: path
+    optional: true
+  in4:
+    type: path
+    optional: true
+  extractcols1:
+    type: String
+    optional: true
+  extractcols2:
+    type: String
+    optional: true
+  extractcols3:
+    type: String
+    optional: true
+  extractcols4:
+    type: String
+    optional: true
+  select1:
+    type: String
+    optional: true
+  select2:
+    type: String
+    optional: true
+  select3:
+    type: String
+    optional: true
+  select4:
+    type: String
+    optional: true
+  select5:
+    type: String
+    optional: true
+  ssclause:
+    type: String
+    optional: true
+  tsvclause:
+    type: String
+    optional: true
+  resourcestmts:
+    type: String
+    optional: true
+  referencestmts:
+    type: String
+    optional: true
+  comment:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  outputstream_out:
+    type: path
+  outputtsv_out:
+    type: path
+  outputcount_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

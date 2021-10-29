@@ -1,0 +1,7 @@
+assets:
+  large_graph:
+  - file:../../../../components/large-graph/*.yaml
+  get_started:
+  - file:../../../../components/get-started/**/*.yaml
+  dummy_pipeline:
+  - file:../../../../components/dummy_pipeline/**/*.yaml

@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: copy_cosmospath_to_cosmospathtsv
+version: 0.0.1
+display_name: Copy CosmosPath to CosmosPathTSV
+type: CommandComponent
+tags: {}
+inputs:
+  path:
+    type: path
+    optional: true
+  shouldrespectlineboundaries:
+    type: String
+    optional: true
+outputs:
+  tsv_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

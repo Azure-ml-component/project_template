@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: get_image_attractiveness_score_using_base64_encoded_image
+version: 0.0.1
+display_name: Get Image Attractiveness score (Using base64 encoded image)
+type: CommandComponent
+tags: {}
+inputs:
+  input1:
+    type: path
+    optional: true
+  param1:
+    type: String
+    optional: true
+outputs:
+  output1_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

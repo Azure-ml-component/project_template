@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: flattenwikiclusters
+version: 0.0.1
+display_name: FlattenWikiClusters
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile1:
+    type: path
+    optional: true
+outputs:
+  outputfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: copy_cosmos_stream_to_intermediate_resource
+version: 0.0.1
+display_name: Copy Cosmos Stream to Intermediate Resource
+type: CommandComponent
+tags: {}
+inputs:
+  cosmospath:
+    type: path
+    optional: true
+  shouldrespectlineboundaries:
+    type: String
+    optional: true
+outputs:
+  anyfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

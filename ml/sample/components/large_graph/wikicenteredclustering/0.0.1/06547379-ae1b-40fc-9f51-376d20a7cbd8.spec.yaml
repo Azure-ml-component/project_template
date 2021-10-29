@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: taprioritizedclustering
+version: 0.0.1
+display_name: TAPrioritizedClustering
+type: CommandComponent
+tags: {}
+inputs:
+  inputfile:
+    type: path
+    optional: true
+outputs:
+  outputfile_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: image_dl_and_convert_to_base64
+version: 0.0.1
+display_name: Image DL and Convert to Base64
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+  max_size:
+    type: String
+    optional: true
+outputs:
+  output_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

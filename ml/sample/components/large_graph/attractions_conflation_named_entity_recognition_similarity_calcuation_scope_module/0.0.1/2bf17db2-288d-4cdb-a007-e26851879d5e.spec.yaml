@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: parameter_to_control_output
+version: 0.0.1
+display_name: Parameter to Control Output
+type: CommandComponent
+tags: {}
+inputs:
+  control_output:
+    type: String
+    optional: true
+outputs:
+  control_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

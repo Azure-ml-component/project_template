@@ -1,0 +1,27 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: data_process
+version: 0.0.10
+display_name: data_process
+type: CommandComponent
+inputs:
+  input_data:
+    type: path
+outputs:
+  output_data:
+    type: path
+command: >-
+  python do_nothing.py --input_data {inputs.input_data} --output_data {outputs.output_data}
+environment:
+  conda:
+    conda_dependencies:
+      name: project_environment
+      channels:
+        - defaults
+      dependencies:
+        - pip=20.2
+        - python=3.6.8
+        - pip:
+          - azureml-defaults
+          - azureml-designer-core==0.0.31
+          - --extra-index-url=https://azuremlsdktestpypi.azureedge.net/modulesdkpreview
+          - azure-ml-component

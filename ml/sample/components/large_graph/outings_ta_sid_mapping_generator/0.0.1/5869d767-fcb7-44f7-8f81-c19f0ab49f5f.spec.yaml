@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_remove_columns_from_structured_stream
+version: 0.0.1
+display_name: '[Outings] Remove Columns from Structured Stream'
+type: CommandComponent
+tags: {}
+inputs:
+  input_stream:
+    type: path
+    optional: true
+  columns_to_remove:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  output_stream_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

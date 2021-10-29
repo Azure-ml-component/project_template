@@ -1,0 +1,32 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: top_reducer_ss
+version: 0.0.1
+display_name: Top Reducer SS
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+  sortcol:
+    type: String
+    optional: true
+  sortdir:
+    type: String
+    optional: true
+  reducecol:
+    type: String
+    optional: true
+  numtokeep:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  output_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

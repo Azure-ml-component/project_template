@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: generatetripple_record_ta_wiki_alltrails
+version: 0.0.1
+display_name: GenerateTripple Record_TA_WIKI_AllTrails
+type: CommandComponent
+tags: {}
+inputs:
+  record_alltrails:
+    type: path
+    optional: true
+  record_ta:
+    type: path
+    optional: true
+  record_wiki:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  record_ta_wiki_alltrails_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

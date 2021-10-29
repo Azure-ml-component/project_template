@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: createcosmospathfreely
+version: 0.0.1
+display_name: CreateCosmosPathFreely
+type: CommandComponent
+tags: {}
+inputs:
+  vc:
+    type: String
+    optional: true
+  relativepath:
+    type: String
+    optional: true
+outputs:
+  createdpath_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

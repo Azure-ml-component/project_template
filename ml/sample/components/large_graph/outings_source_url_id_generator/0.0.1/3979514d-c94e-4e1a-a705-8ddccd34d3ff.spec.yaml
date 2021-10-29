@@ -1,0 +1,17 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: is_file_empty_to_controloutput
+version: 0.0.1
+display_name: Is File Empty? (to ControlOutput)
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+outputs:
+  control_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

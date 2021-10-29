@@ -1,0 +1,26 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: aetheremailmodule
+version: 0.0.1
+display_name: AetherEmailModule
+type: CommandComponent
+tags: {}
+inputs:
+  body:
+    type: path
+    optional: true
+  attachments:
+    type: path
+    optional: true
+  recipients:
+    type: String
+    optional: true
+  subject:
+    type: String
+    optional: true
+outputs:
+  out_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

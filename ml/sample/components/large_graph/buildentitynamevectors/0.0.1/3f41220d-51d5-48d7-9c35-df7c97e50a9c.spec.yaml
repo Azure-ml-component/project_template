@@ -1,0 +1,32 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: guid_ta_wiki_sid_prmeasure
+version: 0.0.1
+display_name: GUID_TA_WIKI_SID_PRMEASURE
+type: CommandComponent
+tags: {}
+inputs:
+  dataset_pr_measure:
+    type: path
+    optional: true
+  master_ta_storyid:
+    type: path
+    optional: true
+  master_wiki_storyid:
+    type: path
+    optional: true
+  master_attribute:
+    type: path
+    optional: true
+  master_sid_storyid:
+    type: path
+    optional: true
+  vc:
+    type: String
+    optional: true
+outputs:
+  stat_guid_ta_wiki_sid_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

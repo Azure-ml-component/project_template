@@ -1,0 +1,29 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_source_url_id_generator
+version: 0.0.1
+display_name: '[Outings] Source Url Id Generator'
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+  url_col:
+    type: String
+    optional: true
+  url_id_col:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  output_ss_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

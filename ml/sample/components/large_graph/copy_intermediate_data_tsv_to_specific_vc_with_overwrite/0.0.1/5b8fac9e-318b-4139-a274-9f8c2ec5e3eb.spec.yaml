@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: replacecosmospath
+version: 0.0.1
+display_name: ReplaceCosmosPath
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+  srcstring:
+    type: String
+    optional: true
+  deststring:
+    type: String
+    optional: true
+outputs:
+  count_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

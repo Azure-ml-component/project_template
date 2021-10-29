@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: tsv_to_html
+version: 0.0.1
+display_name: TSV to HTML
+type: CommandComponent
+tags: {}
+inputs:
+  tsv:
+    type: path
+    optional: true
+  generatehlinkforurl:
+    type: String
+    optional: true
+outputs:
+  htmlreport_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

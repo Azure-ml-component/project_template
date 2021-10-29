@@ -1,0 +1,35 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outing_distance_metric
+version: 0.0.1
+display_name: '[Outing] Distance Metric'
+type: CommandComponent
+tags: {}
+inputs:
+  input_ss:
+    type: path
+    optional: true
+  lat1:
+    type: String
+    optional: true
+  lon1:
+    type: String
+    optional: true
+  lat2:
+    type: String
+    optional: true
+  lon2:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  output_ss_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

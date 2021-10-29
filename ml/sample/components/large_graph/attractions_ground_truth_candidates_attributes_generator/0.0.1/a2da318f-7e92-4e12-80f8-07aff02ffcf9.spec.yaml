@@ -1,0 +1,34 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: outings_ta_sid_mapping_bvt
+version: 0.0.1
+display_name: '[Outings] TA-SID Mapping BVT'
+type: CommandComponent
+tags: {}
+inputs:
+  ta_ground_truth:
+    type: path
+    optional: true
+  bvt_file:
+    type: path
+    optional: true
+  ta_sid_mapping:
+    type: path
+    optional: true
+  date:
+    type: String
+    optional: true
+  vc:
+    type: String
+    optional: true
+  scopeparams:
+    type: String
+    optional: true
+outputs:
+  bvt_results_out:
+    type: path
+  bvt_stat_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

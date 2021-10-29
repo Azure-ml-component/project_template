@@ -1,0 +1,23 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: concat_generictsv
+version: 0.0.1
+display_name: Concat GenericTSV
+type: CommandComponent
+tags: {}
+inputs:
+  input_1:
+    type: path
+    optional: true
+  input_2:
+    type: path
+    optional: true
+  input2hasheader:
+    type: String
+    optional: true
+outputs:
+  output_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal

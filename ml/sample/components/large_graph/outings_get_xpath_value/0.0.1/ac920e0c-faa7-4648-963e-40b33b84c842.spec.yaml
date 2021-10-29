@@ -1,0 +1,20 @@
+$schema: https://componentsdk.azureedge.net/jsonschema/CommandComponent.json
+name: conditional_passthrough_anyfile
+version: 0.0.1
+display_name: Conditional Passthrough (AnyFile)
+type: CommandComponent
+tags: {}
+inputs:
+  input:
+    type: path
+    optional: true
+  control:
+    type: path
+    optional: true
+outputs:
+  output_out:
+    type: path
+command: >-
+  echo fake
+environment:
+  name: AzureML-Minimal
