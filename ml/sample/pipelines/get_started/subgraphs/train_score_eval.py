@@ -1,21 +1,20 @@
-from azure.ml.component import dsl, Pipeline
+from ml.sample.components.get_started import samples_train, samples_score, samples_evaluate
 
-from components import samples_train as train_component_func, samples_score as score_component_func, \
-    samples_evaluate as eval_component_func
+from azure.ml.component import dsl, Pipeline
 
 
 # define a pipeline
 @dsl.pipeline(name='A_training_pipeline_including_train_score_eval',
               description='train model and evaluate model performance')
 def sub_training_pipeline(input_data, learning_rate, test_data) -> Pipeline:
-    train = train_component_func(
+    train = samples_train(
         training_data=input_data,
         max_epochs=5,
         learning_rate=learning_rate)
 
-    score = score_component_func(
+    score = samples_score(
         model_input=train.outputs.model_output,
         test_data=test_data)
 
-    eval = eval_component_func(scoring_result=score.outputs.score_output)
+    eval = samples_evaluate(scoring_result=score.outputs.score_output)
     return eval.outputs
